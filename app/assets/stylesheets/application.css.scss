@@ -17,6 +17,10 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';  
 
+//importar font awesome
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 
 //google fonts 
 h1, h2, h3 {font-family: 'Tajawal', sans-serif;} 
