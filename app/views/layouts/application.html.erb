@@ -22,19 +22,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="/" class="navbar-brand">SaaS</a>
+          <%= link_to root_path, class:"navbar-brand" do %>
+            <i class="fa fa-beer"></i>
+            Inicio
+          <% end%>
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav">
-              <li class="contacto1"><a href="/contacto">contacto</a></li>
-              <li><a href="/extra"><i class="fa fa-beer"></i> PAPALAPAPIRICOIPI</a></li>
+              <li><a href="/contacto"><i class="fa fa-group"></i> Contacto</a></li> <!--LINK HTML -->
+              <li><%= link_to "Extra" , extra_path %></li>   <!-- LINK RUBY (ERB) -->
+              <li><%= link_to "Acerca" , about_path %></li> 
           </ul>
         </div>
-        <div class="collapse navbar-collapse" id="main-nav-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="/about">About</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
       </div>
     </nav>
     
