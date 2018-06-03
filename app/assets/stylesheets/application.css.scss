@@ -62,8 +62,17 @@ p {font-family: 'Roboto', sans-serif;}
   font-weight: 930;
 }
 
-.navbar-default .navbar-toggle .icon-bar,
+
 .navbar-default .navbar-toggle{
+      border: 2px solid black;
+  &:focus, &:hover{
+     background-color: #00467F;
+  }
+     
+}
+
+.navbar-default .navbar-toggle .icon-bar
+{
       background-color: black;
 }
 
